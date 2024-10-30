@@ -1,0 +1,37 @@
+:root {
+    --color-primary-dark-purple: #29054e;
+    --color-primary-purple: #6e3fc5;
+    --color-primary-yellow: #ffd80c;
+  
+    --color-secondary-light-purple: #d0a4ff;
+    --color-secondary-bright-purple: #b43cff;
+    --color-secondary-dark-purple: #4d1f6f;
+    --color-secondary-light-yellow: #ffd965;
+  
+    --color-background-dark-purple: #20033D;
+    --color-background-purple: #482871;
+    --color-background-gray: #7f7f7f;
+  }
+  
+
+:root {
+    --font-family-primary: 'Montserrat', sans-serif;
+  
+    --font-size-h1: 64px;
+    --font-size-h2: 36px;
+    --font-size-h3: 32px;
+    --font-size-h4: 24px;
+    --font-size-body-bold: 18px;
+    --font-size-body: 18px;
+    --font-size-button: 16px;
+  
+    --font-weight-1: 300;
+    --font-weight-2: 400;
+    --font-weight-3: 500;
+    --font-weight-4: 600;
+    --font-weight-5: 700;
+    --font-weight-6: 800;
+    --font-weight-7: 900;
+}
+
+
