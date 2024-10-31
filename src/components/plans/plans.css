@@ -1,0 +1,118 @@
+
+.plans__section {
+    background: linear-gradient(to top, hsl(256, 51%, 58%),#482871,#20033D, #20033D);
+}
+
+
+.section__header{
+    margin-bottom: 1.5em;
+}
+
+
+.plans {
+    margin-top: 4em;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
+    gap: 5em;
+}
+
+.details__plans {
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-between;  
+    align-items: center;
+    text-align: center;
+    padding:2em ;
+    width: 25rem;
+    border-radius: 10px;
+    transition-property: all;
+    transition-duration: 0.8s;
+    &:hover{
+        width: 26rem;
+    }
+}
+
+.details__plans ul {
+    padding: 0 5% 10% 10%;
+    text-align: justify;
+    color: white;
+    font-size: 15px;
+}
+.details__info{
+    li{
+        margin: 1em 0;
+    }
+}
+
+.plan--free,.plan--basic,.plan--pro{ border-width: 2px;  border-style:solid;}
+.plan--free{ border-color: #8D44CE; background: #432669; }
+.plan--basic{ border-color: #AB6AA8; background: #3b1a59; }
+.plan--pro{ border-color: #B08018; background: #41214a; }
+
+.price, .type { display: block; margin: 5px 0;}
+.price {  font-weight: 500;  font-size: 24px; }
+.type {  font-weight: 900;  font-size: 30px; }
+
+.plans__button {
+    padding: 10px 20px; 
+    margin-bottom: 25px;
+    width: 85%;
+    color: white;
+    font-weight: 700;
+    border-radius: 8px;
+    border: 0;
+    opacity: 0.9;
+    transition: background 0.3s ease, transform 0.3s ease; 
+    cursor: pointer;
+}
+.plan--free .details__letters {
+    background: linear-gradient(to right, #7F32E1,  #D0B6F2,  #7F32E1);
+    color: transparent;
+    background-clip: text;
+}
+.plan--basic .details__letters {
+    background: linear-gradient(to right, #AB6AA8,  #ECA8DB, #AB6AA8);
+    color: transparent;
+    background-clip: text;
+}
+.plan--pro .details__letters {
+    background: linear-gradient(to right, #734b3a, #FFD339,  #734b3a);
+    color: transparent;
+    background-clip: text;
+}
+.plan--free .plans__button {
+    background: linear-gradient(to right, #7F32E1, #B479FF, #7F32E1);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
+}
+.plan--basic .plans__button {
+    background: linear-gradient(to right, #AB6AA8, #FBBEEB, #AB6AA8);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
+}
+.plan--pro .plans__button {
+    background: linear-gradient(to right, #B08018, #FFD339, #B08018);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
+}
+
+.plans .details__plans:hover { transform: scale(1.05);}
+.plans__button:hover { opacity: 1; transform: scale(1.05); }
+
+.plan--free:hover {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(121, 92, 202, 0.8), rgba(0, 0, 0, 0));
+    box-shadow: 0 0 10px #B479FF;
+}
+.plan--basic:hover {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(171, 106, 168, 0.8), rgba(0, 0, 0, 0));
+    box-shadow: 0 0 10px #FBBEEB;
+}
+.plan--pro:hover {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(255, 211, 57, 0.6), rgba(0, 0, 0, 0));
+    box-shadow: 0 0 10px #FFD339;
+}
+
+@media (max-width: 1020px) {
+    .section__header{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+}
