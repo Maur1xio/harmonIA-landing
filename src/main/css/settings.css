@@ -34,4 +34,116 @@
     --font-weight-7: 900;
 }
 
+.section__title {
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: 900;
+  background: linear-gradient(to right, #8D44CE, #B070A0, #FFD339, #FFF3C7);
+  color: transparent;
+  background-clip: text;
+  text-align: center;
+}
 
+
+.section__navtitle {
+  margin-top: .5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  .circle{
+      display: inline-block;  
+      width: 10px;  
+      height: 10px;  
+      background-color: #FFD339; 
+      border-radius: 50%; 
+  }
+  .section__navtitle__subtitle{
+      font-size: 1.2em;
+  }
+}
+
+.section{
+  padding: 10vh 15vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+
+.scale__transition{
+  transition: transform .2s;
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+.tracking-in-contract {
+  -webkit-animation: tracking-in-contract 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+          animation: tracking-in-contract 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+
+
+@keyframes appear{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@keyframes scaleUp {
+  0% {
+      transform: scale(0.95); 
+      opacity: 0;            
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;            
+  }
+}
+
+@media (max-width: 1020px) {
+  .section { padding: 5vh 5vh; }
+  .section__title {
+      font-size: 2.2em;
+  }
+  .section__navtitle {
+      .section__navtitle__subtitle{
+          font-size: 1em;
+      }
+  }
+  body{
+    padding-top: 3em;
+
+  }
+}

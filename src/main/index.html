@@ -25,6 +25,15 @@
         <link rel="stylesheet" href="css/settings.css">
         <link rel="stylesheet" href="css/global.css">
         <link rel="stylesheet" href="css/animations.css">
+
+
+        <link rel="stylesheet" href="../components/hero/hero.css">
+        <link rel="stylesheet" href="../components/navbar/navbar.css">
+        <link rel="stylesheet" href="../components/plans/plans.css">
+        <link rel="stylesheet" href="../components/solutions/solutions.css">
+        <link rel="stylesheet" href="../components/services/services.css">
+        <link rel="stylesheet" href="../components/video/video.css">
+        <link rel="stylesheet" href="../components/footer/footer.css">
        
         <!-- Etiquetas para redes sociales -->
         <meta property="og:title" content="Harmonia - Imagina y vuélvelo Real">
@@ -40,32 +49,295 @@
 <body>
 
     <header class="header">
+        <div class="container logo-nav-container">
+            <img class="logo" src="/public/img/icon.png" alt="logo-harmonia" title="logo-harmonia">
+            <nav class="navegation">
+                <ul class="navegation__ul">
+                    <li><a href="#Inicio">Inicio</a></li>
+                    <li><a href="#Ofrecemos">Ofrecemos</a></li>
+                    <li><a href="#Funcionamiento">Funcionamiento</a></li>
+                    <li><a href="#Soluciones">Soluciones</a></li>
+                    <li><a href="#Planes">Planes</a></li>
+                    <li><a href="#Contacto">Contacto</a></li>
+                </ul>
+                <div class="cont__toggle">
+                    <button class="button__toggle scale__transition">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main class="main">
 
         <section class="section hero__section">
+            <span class="onda">
+                <svg width="100%" height="100%" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" overflow="auto" shape-rendering="auto">
+                    <defs>
+                        <path id="wavepath" d="M 0 2000 0 500 Q 85 -1 170 500 t 170 0 170 0 170 0 170 0 170 0 170 0 170 0  v1000 z" />
+                        <path id="motionpath" d="M -340 0 0 0" />
+
+                        <linearGradient id="gradiente" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#A94FFF"/>
+                        <stop offset="100%" stop-color="#DEDEFF"/>
+                        </linearGradient>
+                    </defs>
+                    <g>
+                    <use xlink:href="#wavepath" y="-8" fill="url(#gradiente)">
+                        <animateMotion dur="10s" repeatCount="indefinite">
+                        <mpath xlink:href="#motionpath" />
+                        </animateMotion>
+                    </use>
+                    </g>
+                </svg>  
+            </span>
+
+            <header class="hero__header">
+                <h1 class="hero__title hero__title--first ">Imagina y vuélvelo 
+                    <span class="hero__title hero__title--focus">REAL</span>
+                </h1>
+                <p class="hero__title hero__title--con">con</p>
+                <h1 class="hero__title--second tracking-in-contract ">
+                    Harmon <span>iA</span>
+                </h1>
+            </header>
+
+            <section class="hero__subsection hero__subsection--1">
+                <p>Donde la inteligencia artificial se encuentra con la imaginación, nacen infinitas posibilidades creativas.</p>
+            </section>
+            <section class="hero__subsection hero__subsection--2">
+                <a class="hero__link" href="https://play.google.com/" target="_blank">
+                    <button class="hero__button scale__transition">
+                        <p>Descargar</p>
+                        <i class="fa fa-android"></i>
+                    </button>
+                </a>
+                <a class="hero__link" href="https://www.apple.com/app-store/" target="_blank">
+                    <button class="hero__button scale__transition">
+                        <p>Descargar</p>
+                        <i class="fa fa-apple"></i>
+                    </button>
+                </a>
+
+            </section>
+            <section class="hero__subsection hero__subsection--3">
+                <a href="">Continuar desde la web</a>
+            </section>
+
         </section>
 
         <section class="section services">
+        
+            <div class="services__section">
+                <h2 class="section__title">Desata todo tu potencial con HarmonIA</h2>
+                <h3 class="section__navtitle"> <span class="dot"></span> Ofrecemos<span class="dot"></span></h3>
+                <div class="services">
+                        <div class="details__services music--service">
+                        <div class="music--service text">
+                            <span class="details__letters name">Melodías <br> Mágicas</span>
+                            <p class="details__info">
+                                Deja que la inteligencia artificial transforme tus ideas en música única. Con Harmonia, cada clic crea una melodía personalizada que se adapta a tu estilo y necesidades, desde bandas sonoras para tus proyectos hasta pistas originales para tus producciones. ¡La creatividad nunca tuvo tan buen ritmo!
+                            </p>
+                        </div>
+                        <div class="music--service image">
+                            <img src="/public/img/3dicons.png" alt="Icono de música" class="service-icon">
+                        </div>
+                        
+                    </div>
+                    <div class="details__services video--service">
+                        <div class="video--service text">
+                            <span class="details__letters name">Videos <br> Vibrantes</span>
+                            <p class="details__info">
+                                Transforma tus ideas en videos vibrantes y cautivadores. Con nuestra tecnología avanzada, cada proyecto cobra vida con efectos dinámicos y sonido envolvente, ideal para contenido que destaca y deja huella.
+                            </p></div>
+                        <div class="video--service image">
+                            <img src="/public/img/videos.png" alt="Icono de video" class="service-icon">
+                        </div>
+                    </div>
+                    <div class="details__services photos--service">
+                        <div class="photos--service text">
+                            <span class="details__letters name">Imágenes  <br> inspiradoras</span>
+                            <p class="details__info">
+                                Captura el espíritu de tus proyectos con imágenes que cuentan historias. Harmonia te permite obtener imágenes de alta calidad que se adaptan perfectamente a tus necesidades creativas.
+                            </p></div>
+                        <div class="photos--service image">
+                            <img src="/public/img/photos.png" alt="Icono de imágenes" class="service-icon">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
         </section>
 
-        <section class="video__section">
+        <section class="section video__section">
+            <h2 class="section__title" >Crea contenido en minutos,<br>sin complicaciones</h2>
+            <h3 class="section__navtitle">
+                <span class="circle"></span>
+                ¿CÓMO FUNCIONA?
+                <span class="circle"></span>
+            </h3>
+            <div class="circle_video">
+
+            </div>
+            <div class="circle_video1">
+
+            </div>
+            <div class="circle_video2">
+
+            </div>
+
+
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/a3ICNMQW7Ok?mute=1&controls=0"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <hr style="visibility: hidden; margin: 65px 0;">
+
         </section>
 
         <section class="section block-Sec4">
+            <div class="block-Sec4-CirculosFondo">
+                <div class="circle circle1 float-down"></div>
+                <div class="circle circle2 float-up"></div>
+            </div>
+    
+            <header class="section__header">
+                <h2 class="section__title">Herramientas diseñadas para impulsar tus ideas</h2>
+                <div class="section__navtitle"> 
+                    <span class="circle"></span>
+                    <h3 class="section__navtitle__subtitle">Soluciones</h3>
+                    <span class="circle"></span>
+                </div>
+            </header>
+    
+            <section class="block-Sec4-Elementos">
+    
+                <div class="block-Sec4-EMPRESA">
+                    <div class="EMPRESA-1">
+                        <h3>Empresas</h3>
+                        <div class="block-Sec4-BOX">
+                            <p>Crea videos promocionales, música para <br> publicidad y efectos visuales para <br> presentaciones en pocos clics.</p>
+                        </div>
+                    </div>
+                    
+                    <img class="folder" src="/public/img/folderSECION4.png" alt="Folder"></img>
+
+                </div>
+    
+                <div class="block-Sec4-VIDEO">
+                    <div class="VIDEO-1">
+                    <h3>Productores de video</h3>
+                    <div class="block-Sec4-BOXV">
+                        <p>Genera música y efectos visuales <br> adaptados a cine y televisión con calidad <br> profesional y sin complicaciones.</p>
+                    </div>
+                    </div>
+                    <img class="folder" src="/public/img/PlaySECION4.png"></img>
+
+                </div>
+    
+                <div class="block-Sec4-CONTENIDO">
+                    <div class="CONTENIDO-1">
+                        <h3>Creadores de contenido</h3>
+                        <div class="block-Sec4-BOXC">
+                            <p>Genera música, videos y efectos visuales<br> personalizados para YouTube, Twitch o <br> redes sociales de forma rápida y sencilla.</p>
+                        </div>
+                    </div>
+                    <img class="folder" src="/public/img/CoraSECION4.png"></img>
+
+                </div>
+            </section>
         </section>
 
         <section class="section plans__section">
+
+            <header class="section__header">
+                <h2 class="section__title">Encuentra el plan perfecto para tus necesidades</h2>
+                <div class="section__navtitle"> 
+                    <span class="circle"></span>
+                    <h3 class="section__navtitle__subtitle">Planes</h3>
+                    <span class="circle"></span>
+                </div>
+            </header>
+            
+            <section class="plans">
+                <section class="details__plans plan--free">
+                    <span class="details__letters price">s/.0</span>
+                    <span class="details__letters type">FREE</span>
+                    <div class="plan__divider"></div>
+                    <ul class="details__info">
+                        <li>Crea contenido impresionante con plantillas multimedia básicas.</li>
+                        <li>Exporta en Full HD (1080p a 30fps), perfecto para compartir en redes sociales.</li>
+                        <li>Lleva tu creatividad al límite con hasta 5 proyectos al mes.</li>
+                        <li>Experimenta la plataforma de forma gratuita, con publicidad mínima que no interfiere.</li>
+                    </ul>
+                    <button class="plans__button">Acceder</button>
+                </section>
+        
+                <section class="details__plans plan--pro">
+                    <span class="details__letters price">s/.50</span>
+                    <span class="details__letters type">PRO</span>
+                    <div class="plan__divider"></div>
+                    <ul class="details__info">
+                        <li>Disfruta de recursos multimedia ilimitados y plantillas premium.</li>
+                        <li>Logra una calidad de cine en cada proyecto con una resolución 4K a 60fps.</li>
+                        <li>Crea proyectos ilimitados, sin límites para tu creatividad.</li>
+                        <li>Utiliza herramientas avanzadas de IA para efectos únicos y personalización profunda.</li>
+                        <li>Benefíciate del soporte prioritario y mantén tus proyectos en marcha.</li>
+                    </ul>
+                    <button class="plans__button">Acceder</button>
+                </section>
+        
+                <section class="details__plans plan--basic">
+                    <span class="details__letters price">s/.25</span>
+                    <span class="details__letters type">BÁSICO</span>
+                    <div class="plan__divider"></div>
+                    <ul class="details__info">
+                        <li>Accede a plantillas premium y recursos multimedia en alta calidad.</li>
+                        <li>Exporta tus proyectos en resolución 2K a 30fps para una experiencia visual impactante.</li>
+                        <li>10 proyectos al mes, ideales para creadores más activos.</li>
+                        <li>Sin marcas de agua, para un acabado limpio y profesional.</li>
+                        <li>Efectos de IA para dar un toque especial a tus videos.</li>
+                    </ul>
+                    <button class="plans__button">Acceder</button>
+                </section>
+            </section>
         </section>
 
 
     </main>
 
     <footer class="footer">
-        
-    </footer>
+        <div class="footer-content">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="../../public/img/IconFooter.png" alt="HarmonIA Logo">
+            </div>
 
+            <!-- Social Media Section -->
+            <div class="footer-social">
+                <br>
+                <p>CONOCE MÁS</p>
+                <br>
+                <div class="social-icons">
+                    <a href="https://www.youtube.com" target="_blank">
+                        <img src="../../public/img/YTFooter.png" alt="YouTube Icon">
+                    </a>
+                    <a href="https://www.tiktok.com" target="_blank">
+                        <img src="../../public/img/TTFooter.png" alt="TikTok Icon">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="../../public/img/IGFooter.png" alt="Instagram Icon">
+                    </a>
+
+                </div>
+                <br><br><br><br>
+            </div>
+
+        </div>
+    </footer>
 
     <script></script>
 
