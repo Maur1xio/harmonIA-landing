@@ -34,6 +34,39 @@
     --font-weight-7: 900;
 }
 
+.section__title {
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: 900;
+  background: linear-gradient(to right, #8D44CE, #B070A0, #FFD339, #FFF3C7);
+  color: transparent;
+  background-clip: text;
+  text-align: center;
+}
+
+
+.section__navtitle {
+  margin-top: .5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  .circle{
+      display: inline-block;  
+      width: 10px;  
+      height: 10px;  
+      background-color: #FFD339; 
+      border-radius: 50%; 
+  }
+  .section__navtitle__subtitle{
+      font-size: 1.2em;
+  }
+}
+
 .section{
   padding: 10vh 15vh;
   min-height: 100vh;
@@ -42,6 +75,7 @@
   align-content: center;
   justify-content: center;
 }
+
 
 .scale__transition{
   transition: transform .2s;
