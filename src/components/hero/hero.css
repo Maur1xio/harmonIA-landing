@@ -82,7 +82,25 @@
     justify-content: center;
     gap: 5em;
 }
+.hero__button{
+    cursor: pointer;
 
+    background: rgb(186,132,255);
+background: linear-gradient(194deg, rgba(186,132,255,1) 0%, rgba(65,38,145,1) 100%);
+    border: none;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 1em 4em;
+    box-shadow: 0 3px 2px 2px rgb(64, 9, 137) ;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    gap:1em;
+    i {
+        font-size: 2em;
+    }
+}
 .hero__subsection--3{
     margin-top: 2em;
     & > a{
