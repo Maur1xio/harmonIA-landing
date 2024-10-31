@@ -160,3 +160,23 @@
     transform: scale(1.05);
 }
 
+
+@media (max-width: 1019px) {
+    .section__header{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .folder, .Cora, .play{
+        order: 1;
+    }
+    .EMPRESA-1,.VIDEO-1,.CONTENIDO-1 {
+        order: 2;
+    }
+    .block-Sec4-EMPRESA, .block-Sec4-VIDEO, .block-Sec4-CONTENIDO{
+        flex-direction: column;
+    }
+    .EMPRESA-1 h3, .VIDEO-1 h3, .CONTENIDO-1 h3{
+        text-align: center;
+        margin: 1em;
+    }
+}
