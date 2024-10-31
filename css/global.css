@@ -10,7 +10,9 @@ body{
     background: linear-gradient(to bottom, var(--color-background-dark-purple), var(--color-background-purple));
     padding-top: 6em;
 }
-
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
 h1 {
   font-size: var(--font-size-h1);
   font-weight: var(--font-weight-6);
