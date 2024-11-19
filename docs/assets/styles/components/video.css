@@ -1,49 +1,52 @@
 .video__section {
     position: relative;
     background: linear-gradient(to top, hsl(256, 51%, 58%), #482871, #20033D, #20033D);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 7em 0;
 }
 
 .circle_video {
     position: absolute;
     width: 35vw;
     height: 35vh;
-    top: 42%; /* Ajusta este valor para mover el círculo verticalmente */
-    left: 30%; /* Ajusta este valor para mover el círculo horizontalmente */
+    top: 42%; 
+    left: 30%; 
     background: radial-gradient(circle at center, rgb(223, 214, 176) 30%, #f8bef7 40%, rgba(72, 40, 113, 0) 70%);
-    z-index: 0; /* Coloca el círculo detrás del video */
-    filter: blur(4rem); /* Ajusta el efecto blur si es necesario */
-    transform: translate(-50%, -50%); /* Usando transform para centrar según sea necesario */
+    z-index: 0; 
+    filter: blur(4rem); 
+    transform: translate(-50%, -50%); 
 }
 .circle_video1 {
     position: absolute;
     width: 31vw;
     height: 31vh;
-    top: 42%; /* Ajusta este valor para mover el círculo verticalmente */
-    left: 60%; /* Ajusta este valor para mover el círculo horizontalmente */
+    top: 42%;
+    left: 60%;
     background: radial-gradient(circle at center, rgb(230, 186, 255) 30%, #9d00f1 40%, rgba(72, 40, 113, 0) 70%);
-    z-index: 0; /* Coloca el círculo detrás del video */
-    filter: blur(4rem); /* Ajusta el efecto blur si es necesario */
-    transform: translate(-50%, -50%); /* Usando transform para centrar según sea necesario */
+    z-index: 0; 
+    filter: blur(4rem); 
+    transform: translate(-50%, -50%); 
 }
 
 .circle_video2{
     position: absolute;
     width: 40vw;
     height: 40vh;
-    top: 70%; /* Ajusta este valor para mover el círculo verticalmente */
-    left: 65%; /* Ajusta este valor para mover el círculo horizontalmente */
+    top: 70%; 
+    left: 65%;
     background: radial-gradient(circle at center, rgb(193, 193, 207) 30%, #f8bef7 40%, rgba(72, 40, 113, 0) 70%);
-    z-index: 0; /* Coloca el círculo detrás del video */
-    filter: blur(4rem); /* Ajusta el efecto blur si es necesario */
-    transform: translate(-50%, -50%); /* Usando transform para centrar según sea necesario */
+    z-index: 0; 
+    filter: blur(4rem);
+    transform: translate(-50%, -50%); 
 }
 .video-container {
+    margin-top: 3em;
     position: relative;
-    padding: 1em 3em;
-    width: 80%;
-    height: 500px;
-    margin: 3em auto;
-    z-index: 1; /* Asegura que el video esté por encima del círculo */
+    width: 100%;
+    height: 550px;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;

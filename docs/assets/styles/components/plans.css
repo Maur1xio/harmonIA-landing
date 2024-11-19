@@ -1,35 +1,35 @@
 
 .plans__section {
     background: linear-gradient(to top, hsl(256, 51%, 58%),#482871,#20033D, #20033D);
-}
-
-
-.section__header{
-    margin-bottom: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6em 0;
 }
 
 
 .plans {
-    margin-top: 4em;
+    margin-top: 2em;
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-evenly;
-    gap: 5em;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1em;
+
 }
 
 .details__plans {
     display: flex;
     flex-direction: column;  
-    justify-content: space-between;  
+    justify-content: start;  
     align-items: center;
     text-align: center;
-    padding:2em ;
-    width: 25rem;
+    padding: 1em;
+    width :20rem;
     border-radius: 10px;
     transition-property: all;
     transition-duration: 0.8s;
     &:hover{
-        width: 26rem;
+        width :20.5rem;
     }
 }
 
@@ -37,11 +37,12 @@
     padding: 0 5% 10% 10%;
     text-align: justify;
     color: white;
-    font-size: 15px;
+    font-size: .7em;
 }
 .details__info{
+    height: 100%;
     li{
-        margin: 1em 0;
+        margin: .5em 0;
     }
 }
 
@@ -50,16 +51,17 @@
 .plan--basic{ border-color: #AB6AA8; background: #3b1a59; }
 .plan--pro{ border-color: #B08018; background: #41214a; }
 
-.price, .type { display: block; margin: 5px 0;}
-.price {  font-weight: 500;  font-size: 24px; }
-.type {  font-weight: 900;  font-size: 30px; }
+.price, .type { margin-bottom: .5em ;}
+.price {  font-weight: 500;  font-size: 1em; }
+.type {  font-weight: 900;  font-size: 1.1em;}
 
 .plans__button {
     padding: 10px 20px; 
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     width: 85%;
     color: white;
     font-weight: 700;
+    font-size: .7em;
     border-radius: 8px;
     border: 0;
     opacity: 0.9;
@@ -94,7 +96,7 @@
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
 }
 
-.plans .details__plans:hover { transform: scale(1.05);}
+.plans .details__plans:hover { transform: scale(1.04);}
 .plans__button:hover { opacity: 1; transform: scale(1.05); }
 
 .plan--free:hover {
@@ -109,6 +111,13 @@
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(255, 211, 57, 0.6), rgba(0, 0, 0, 0));
     box-shadow: 0 0 10px #FFD339;
 }
+
+@media (max-width: 1240px) {
+    .plans {
+        justify-content: center;
+    }
+}
+
 
 @media (max-width: 1020px) {
     .section__header{
