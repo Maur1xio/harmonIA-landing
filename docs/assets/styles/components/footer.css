@@ -1,46 +1,58 @@
 .footer {
     background-color: #20033d;
-    padding: 20px;
-    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 0;
 }
 
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 200px;
+    }
+}
+.footer-social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
 
-.footer-content {
-    display: flex; /* Usar Flexbox para la distribución */
-    justify-content: space-between; /* Espacio entre el logo y los íconos */
-    align-items: center; /* Alinear verticalmente al centro */
+    p{
+        color: #fff;
+        font-size: .8em;
+    }
+
+    a{
+        img{
+            width: 120px;
+        }
+    }
+
 }
 
-.footer-logo {
-    position: relative; /* Cambia a absoluto para fijar la posición en su contenedor */
-    left: 50%; /* Centra el logo horizontalmente */
-    transform: translateX(-300%); /* Ajusta el centro del logo */
-    /* Puedes añadir más propiedades aquí si es necesario */
+@media (max-width: 1020px) {
+    .footer__container{
+        gap: 3em;
+        flex-direction: column;
+    }
+
 }
 
-
-.footer-social {
-    text-align: right; /* Alinear el texto a la derecha */
+@media (max-width: 520px) {
+    .social-icons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
-
-.footer-social p {
-    color: white; /* Cambia el color del texto a blanco */
-    font-family: 'Montserrat', sans-serif; /* Establece la fuente Montserrat */
-    font-size: 20px; /* Aumenta el tamaño de la fuente, ajusta según sea necesario */
-    margin: 0; /* Elimina el margen para un mejor alineamiento */
-    position: relative; /* Permite mover el elemento usando left */
-    left: -170px; /* Ajusta este valor para mover el texto en el eje X */
-}
-
-
-
-.social-icons img {
-    width: 160px; /* Establece un ancho fijo para los íconos */
-    height: auto; /* Mantiene la proporción del ícono */
-    transition: transform 0.3s ease; /* Agrega una transición suave para efectos al pasar el mouse */
-}
-
-.social-icons img:hover {
-    transform: scale(1.1); /* Aumenta el tamaño del ícono al pasar el mouse */
-}
-
