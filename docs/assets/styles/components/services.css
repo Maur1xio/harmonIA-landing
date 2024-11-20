@@ -41,7 +41,6 @@
 
 
 .details__services {
-    animation: scaleUp 0.8s ease forwards;
     display: flex;
     flex-wrap: wrap;
     align-items: center;

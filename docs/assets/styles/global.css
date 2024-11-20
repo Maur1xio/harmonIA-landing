@@ -50,10 +50,29 @@ h4 {
   font-size: var(--font-size-h4);
   font-weight: var(--font-weight-3);
 }
+.hidden-right{
+  opacity: 0;
+  filter: blur(8px) !important;
+  transform: translateX(-15%) !important;
+  transition: all .8s !important;
+}
+.hidden-left{
+  opacity: 0;
+  filter: blur(8px) !important;
+  transform: translateX(15%) !important;
+  transition: all .8s !important;
+}
+.show{
+  opacity: 1;
+  filter: blur(0) !important;
+  transform: translateX(0) !important;
+}
 
 .max__size__width{
   width: 80vw;
-  
+}
+.dis__none{
+  display: none;
 }
 
 .grad__circle{

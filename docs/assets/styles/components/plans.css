@@ -28,9 +28,14 @@
     border-radius: 10px;
     transition-property: all;
     transition-duration: 0.8s;
-    &:hover{
-        width :20.5rem;
-    }
+}
+.details__plans:nth-child(2){
+    transition-delay: 300ms !important;
+
+}
+.details__plans:nth-child(3){
+    transition-delay: 600ms !important;
+    
 }
 
 .details__plans ul {

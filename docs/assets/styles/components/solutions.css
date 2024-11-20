@@ -81,7 +81,6 @@
 }
 
 .block-Sec4-EMPRESA, .block-Sec4-VIDEO, .block-Sec4-CONTENIDO{
-    animation: scaleUp 0.8s ease forwards;
     display: flex;
     justify-content: center;
     align-items: center;
