@@ -6,11 +6,9 @@ export function subMenuHamburguerStart(){
 
 
     buttonHamburger.addEventListener("click",function(e){
-        console.log("Abrir menu")
         hamburguerMenu.classList.add("show__submenu");
     })
     closeHamburguer.addEventListener("click",function(e){
-        console.log("Cerrar menu")
         hamburguerMenu.classList.remove("show__submenu");
     })
 
